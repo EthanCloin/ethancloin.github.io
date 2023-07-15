@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@300;600;700&display=swap");
+
+:root {
+  --russian-violet: #2a0440;
+  --pink-lavendar: #e4b7e5;
+  --african-violet: #b288c0;
+  --veronica: #9a48d0;
+  --ash-gray: #b9c6ae;
+}
+body {
+  background-color: var(--russian-violet);
+}
+
+p {
+  color: var(--african-violet);
+  font-family: "Roboto Slab", serif;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -7,7 +24,21 @@
 .navbar-link {
   margin: 0 1vw;
   padding: 0.5vh 0.5vw;
+  color: var(--ash-gray);
 }
+
 .navbar-link:first-child {
   margin-left: auto;
+}
+
+.bio-header {
+  color: var(--pink-lavendar);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.experience-title {
+  color: var(--african-violet);
+}
+.contact-header {
+  color: var(--pink-lavendar);
 }
