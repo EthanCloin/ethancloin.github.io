@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@300;600;700&display=swap");
 
+/* define vars for my color palette */
 :root {
   --russian-violet: #2a0440;
   --pink-lavendar: #e4b7e5;
@@ -11,34 +12,67 @@ body {
   background-color: var(--russian-violet);
 }
 
-p {
+/* 
+need to remove this global element rule 
+as i dive into styling each section 
+*/
+/* p {
   color: var(--african-violet);
   font-family: "Roboto Slab", serif;
-}
+} */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  min-height: 8vh;
+  font-size: x-large;
 }
 
 .navbar-link {
   margin: 0 1vw;
   padding: 0.5vh 0.5vw;
   color: var(--ash-gray);
+  font-family: "Roboto Slab", serif;
 }
 
 .navbar-link:first-child {
   margin-left: auto;
 }
 
-.bio-header {
-  color: var(--pink-lavendar);
+.bio {
   font-family: "Roboto Condensed", sans-serif;
+  font-size: x-large;
+  color: var(--pink-lavendar);
+  height: 80vh;
+  margin: 5vh 3vh 15vh;
+  align-items: center;
 }
 
+.bio-intro {
+  font-family: "Roboto Slab", serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 1.2em;
+  color: var(--ash-gray);
+  margin: 0;
+}
+
+.bio-title {
+  font-size: 4em;
+  margin-top: auto;
+}
+
+.bio-subtitle {
+  font-size: 4em;
+  font-weight: lighter;
+  color: var(--african-violet);
+  margin-top: auto;
+  margin-bottom: 0.5em;
+}
 .experience-title {
   color: var(--african-violet);
 }
+
 .contact-header {
   color: var(--pink-lavendar);
 }
