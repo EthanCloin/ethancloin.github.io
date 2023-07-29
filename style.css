@@ -42,16 +42,48 @@ as i dive into styling each section
 .sidebar-wrapper {
   display: flex;
 }
+
 .sidebar {
   display: flex;
   flex-direction: column-reverse;
   height: 92vh; /* add to 100vh with navbar*/
   width: 5vw;
   position: fixed;
+  margin-bottom: 5vh;
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45%;
+  }
 
   .contact-icon {
-    width: 75%;
+    width: 65%;
   }
+
+  .contact-link {
+    align-self: center;
+    text-align: center;
+    flex-grow: 1 1;
+    width: 100%;
+  }
+
+  .contact-link:last-child {
+    margin-bottom: 5vh;
+  }
+
+  .decorative-line {
+    transform: rotate(90deg);
+    border: var(--ash-gray) 1px solid;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}
+
+.content-wrapper {
+  margin: 10vh 10vw 10vw 10vw;
+  align-items: center;
 }
 
 .bio {
@@ -59,8 +91,6 @@ as i dive into styling each section
   font-size: x-large;
   color: var(--pink-lavendar);
   height: 80vh;
-  margin: 5vh 15vw 15vw 10vh;
-  align-items: center;
 }
 
 .bio-intro {
@@ -91,8 +121,4 @@ as i dive into styling each section
 }
 .experience-title {
   color: var(--african-violet);
-}
-
-.contact-header {
-  color: var(--pink-lavendar);
 }
