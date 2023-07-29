@@ -39,12 +39,27 @@ as i dive into styling each section
   margin-left: auto;
 }
 
+.sidebar-wrapper {
+  display: flex;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 92vh; /* add to 100vh with navbar*/
+  width: 5vw;
+  position: fixed;
+
+  .contact-icon {
+    width: 75%;
+  }
+}
+
 .bio {
   font-family: "Roboto Condensed", sans-serif;
   font-size: x-large;
   color: var(--pink-lavendar);
   height: 80vh;
-  margin: 5vh 3vh 15vh;
+  margin: 5vh 15vw 15vw 10vh;
   align-items: center;
 }
 
@@ -68,6 +83,11 @@ as i dive into styling each section
   color: var(--african-violet);
   margin-top: auto;
   margin-bottom: 0.5em;
+}
+
+.bio-body {
+  font-size: 1.3em;
+  max-width: 70vw;
 }
 .experience-title {
   color: var(--african-violet);
