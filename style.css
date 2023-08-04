@@ -12,132 +12,207 @@ body {
   background-color: var(--russian-violet);
 }
 
-/* 
-need to remove this global element rule 
-as i dive into styling each section 
-*/
-/* p {
-  color: var(--african-violet);
-  font-family: "Roboto Slab", serif;
-} */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  min-height: 8vh;
-  font-size: 32px;
-
-  .navbar-icon {
-    width: 1.5em;
-    margin-left: 1vw;
-    margin-right: 0.5vw;
-    margin-bottom: auto;
-  }
-}
-
-.navbar-link {
-  margin: 0 1vw;
-  padding: 0.5vh 0.5vw;
-  color: var(--ash-gray);
-  font-family: "Roboto Slab", serif;
-}
-
-.navbar-link:first-child {
-  margin-left: auto;
-}
-
-.sidebar-wrapper {
-  display: flex;
-}
-
-.sidebar {
-  display: flex;
-  flex-direction: column-reverse;
-  height: 92vh; /* add to 100vh with navbar*/
-  width: 5vw;
-  position: fixed;
-  margin-bottom: 5vh;
-
-  .contact-wrapper {
+/* for desktop  */
+@media (min-width: 768px) {
+  .navbar {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    height: 95%;
+    align-items: flex-end;
+    min-height: 8vh;
+    font-size: 32px;
+
+    .navbar-icon {
+      width: 1.5em;
+      margin-left: 1vw;
+      margin-right: 0.5vw;
+      margin-bottom: auto;
+    }
   }
 
-  .contact-icon {
-    width: 65%;
-  }
-
-  .contact-link {
-    align-self: center;
-    text-align: center;
-    flex-grow: 1 1;
-    width: 100%;
-  }
-
-  .contact-link:last-child {
-    margin-bottom: 5vh;
-  }
-
-  .decorative-line {
-    transform: rotate(90deg);
-    border: var(--ash-gray) 1px solid;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-  }
-}
-
-.content-wrapper {
-  margin: 10vh 10vw 10vw 10vw;
-  align-items: center;
-}
-
-.bio {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 28px;
-  color: var(--pink-lavendar);
-  height: 80vh;
-}
-
-.bio-intro {
-  font-family: "Roboto Slab", serif;
-  font-weight: lighter;
-  font-style: italic;
-  font-size: 1.2em;
-  color: var(--ash-gray);
-  margin: 0;
-}
-
-.bio-title {
-  font-size: 4em;
-  margin-top: auto;
-}
-
-.bio-subtitle {
-  font-size: 4em;
-  font-weight: lighter;
-  color: var(--african-violet);
-  margin-top: auto;
-  margin-bottom: 0.5em;
-}
-
-.bio-body {
-  font-size: 1.3em;
-  max-width: 70vw;
-}
-.experience-title {
-  color: var(--african-violet);
-}
-
-.announcement {
-  font-size: 2em;
-  color: var(--pink-lavendar);
-  margin-top: auto;
-  margin-bottom: 0.5em;
-
-  .announcement-link {
+  .navbar-link {
+    margin: 0 1vw;
+    padding: 0.5vh 0.5vw;
     color: var(--ash-gray);
-    /* filter: brightness(0.85); */
+    font-family: "Roboto Slab", serif;
+  }
+
+  .navbar-link:first-child {
+    margin-left: auto;
+  }
+
+  .outer-wrapper {
+    display: flex;
+  }
+
+  .iconbar {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 92vh; /* add to 100vh with navbar*/
+    width: 5vw;
+    position: fixed;
+    margin-bottom: 5vh;
+
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 95%;
+    }
+
+    .contact-icon {
+      width: 65%;
+    }
+
+    .contact-link {
+      align-self: center;
+      text-align: center;
+      flex-grow: 1 1;
+      width: 100%;
+    }
+
+    .contact-link:last-child {
+      margin-bottom: 5vh;
+    }
+
+    .decorative-line {
+      transform: rotate(90deg);
+      border: var(--ash-gray) 1px solid;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+  }
+
+  .content-wrapper {
+    margin: 10vh 10vw 10vw 10vw;
+    align-items: center;
+  }
+
+  .bio {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 28px;
+    color: var(--pink-lavendar);
+    height: 80vh;
+  }
+
+  .bio-intro {
+    font-family: "Roboto Slab", serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 1.2em;
+    color: var(--ash-gray);
+    margin: 0;
+  }
+
+  .bio-title {
+    font-size: 4em;
+    margin-top: auto;
+  }
+
+  .bio-subtitle {
+    font-size: 4em;
+    font-weight: lighter;
+    color: var(--african-violet);
+    margin-top: auto;
+    margin-bottom: 0.5em;
+  }
+
+  .bio-body {
+    font-size: 1.3em;
+    max-width: 70vw;
+  }
+  .experience-title {
+    color: var(--african-violet);
+  }
+
+  .announcement {
+    font-size: 2em;
+    color: var(--pink-lavendar);
+    margin-top: auto;
+    margin-bottom: 0.5em;
+
+    .announcement-link {
+      color: var(--ash-gray);
+      /* filter: brightness(0.85); */
+    }
+  }
+}
+
+/* mobile devices */
+@media (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+  .outer-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100vh;
+  }
+  .content-wrapper {
+    margin: 2vh 2vw;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  .iconbar {
+    display: flex;
+    height: 15vh;
+    width: 100vw;
+    margin-top: auto;
+
+    .contact-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+    }
+
+    .contact-icon {
+      height: 85%;
+      width: 55%;
+    }
+
+    .contact-link {
+      align-self: center;
+      text-align: center;
+      flex-grow: 1 1;
+      width: 100%;
+    }
+
+    .decorative-line {
+      display: none;
+    }
+  }
+
+  .bio {
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--pink-lavendar);
+    height: 25vh;
+    text-align: center;
+  }
+
+  .bio-intro {
+    font-family: "Roboto Slab", serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--ash-gray);
+  }
+
+  .bio-title {
+    font-size: 32px;
+    margin-top: auto;
+  }
+
+  .bio-subtitle {
+    font-size: 20px;
+    font-weight: lighter;
+    color: var(--african-violet);
+  }
+
+  .bio-body {
+    font-size: 14px;
+    max-width: 85vw;
+    text-align: center;
+    margin: 0 auto;
   }
 }
