@@ -15,14 +15,14 @@ body {
 /* for desktop  */
 @media (min-width: 768px) {
   html {
-    font-size: 36px;
+    font-size: 28px;
   }
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     min-height: 8vh;
-    font-size: 32px;
+    font-size: 1em;
 
     .navbar-icon {
       width: 1.5em;
