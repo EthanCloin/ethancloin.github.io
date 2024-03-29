@@ -12,3 +12,11 @@ Utilize vanilla web development technologies to build a simple, neatly-styled po
 - [ ] Design a desktop layout and color scheme
 - [ ] Write summary of my current experience at BD
 - [ ] Add layout for mobile view
+
+# Dev Stuff
+
+run tailwind:
+
+```bash
+npx tailwindcss -i main.css -o style.css
+```
