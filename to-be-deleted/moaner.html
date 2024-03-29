@@ -1,0 +1,18 @@
+<div class="p-3">
+  <nav class="h-8 w-full flex justify-between">
+    <!-- TODO: add links to sections onclick of hamburger menu -->
+    <p class="text-lg">Ethan Cloin</p>
+    <img src="./assets/icons/hamburger-menu-svgrepo-com.svg" />
+    <button id="moaner">;)</button>
+  </nav>
+  <audio id="moanEffect">
+    <source src="./assets/sfx/moan.m4a" type="audio/mp4" />
+    Cannot Play Audio
+  </audio>
+  <script>
+    document.getElementById("moaner").addEventListener("click", function () {
+      var sound = document.getElementById("moanEffect");
+      sound.play();
+    });
+  </script>
+</div>
