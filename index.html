@@ -9,14 +9,49 @@
     <title>Profile | Ethan Cloin</title>
   </head>
   <body>
-    <div class="p-3">
-      <nav class="h-8 w-full flex justify-between">
-        <!-- TODO: add links to sections onclick of hamburger menu -->
-        <p class="text-lg">Ethan Cloin</p>
-        <img src="./assets/icons/menu-hamburger-svgrepo-com.svg" />
-      </nav>
+    <div id="hero-wrapper" class="flex flex-col h-screen p-3 pb-0">
+      <div class="p-3 pb-0">
+        <nav class="h-8 w-full flex justify-between items-center">
+          <!-- TODO: add links to sections onclick of hamburger menu -->
+          <p class="text-lg">Ethan Cloin</p>
+          <img src="./assets/icons/menu-hamburger-svgrepo-com.svg" />
+        </nav>
+      </div>
+
+      <section
+        id="hero"
+        class="flex flex-col flex-grow-2 items-center text-center"
+      >
+        <div class="flex-col flex p-3">
+          <p class="text-lg text-slate-700">Who am I?</p>
+          <p class="text-black text-4xl">Ethan Cloin</p>
+        </div>
+        <div class="flex flex-col items-center justify-around">
+          <p class="text-lg text-slate-800">
+            I'm a problem solver, determined to find efficient solutions. I
+            develop web technology and write technical articles, often from the
+            comfort of a local coffee shop.
+          </p>
+          <p class="text-lg text-slate-800 mt-4">
+            Curious about what I can do? Check out my public projects and
+            writings below!
+          </p>
+        </div>
+      </section>
+      <div class="flex flex-col items-center justify-around">
+        <a
+          href="#industries"
+          class="w-1/2 h-12 flex justify-center items-center my-10 bg-slate-200 text-xl text-slate-800 border rounded-sm border-slate-600"
+          >See my work!</a
+        >
+      </div>
+      <img
+        class="w-fit h-auto mt-auto grow-0"
+        src="assets/images/2023-profilephoto-removebg-preview.png"
+      />
     </div>
-    <div class="flex w-screen p-3 justify-center items-center">
+
+    <div class="flex w-screen p-3 justify-center items-center mt-12">
       <p class="text-lg text-slate-600">My Experiences</p>
     </div>
     <section id="industries" class="flex flex-col h-fit px-5 py-3">
@@ -32,8 +67,8 @@
           />
           <p class="text-xl pt-3">Payment Processing</p>
           <p class="text-md pt-3">
-            Mobile application development for a global payments provider,
-            supporting a mobile Point of Sale and merchant portal.
+            Mobile and web development, supporting a mobile Point of Sale and
+            merchant portal.
           </p>
         </div>
       </div>
@@ -71,6 +106,10 @@
         </div>
       </div>
     </section>
+    <section
+      id="skills-and-tech"
+      class="flex flex-col h-fit px-5 py-3"
+    ></section>
 
     <!-- Sidebar / Bottombar -->
     <!-- <div class="outer-wrapper"> -->

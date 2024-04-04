@@ -7,16 +7,16 @@ and skills at a glance. This includes my resume, professional email, and relevan
 
 Utilize vanilla web development technologies to build a simple, neatly-styled portfolio page.
 
-## Tasks
+## Todo
 
-- [ ] Design a desktop layout and color scheme
-- [ ] Write summary of my current experience at BD
-- [ ] Add layout for mobile view
+- [ ] Add .prettierrc to sort tailwind classes
+- [ ] Add section with my articles
+- [ ] Add contact section with form
 
 # Dev Stuff
 
 run tailwind:
 
 ```bash
-npx tailwindcss -i main.css -o style.css
+npx tailwindcss -i main.css -o style.css --watch
 ```
