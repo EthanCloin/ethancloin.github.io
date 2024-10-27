@@ -1,217 +1,140 @@
 <!DOCTYPE html>
 <html lang="en" class="font-mulish">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/icons/owl-favicon.png" />
-    <title>Profile | Ethan Cloin</title>
-  </head>
-  <body>
-    <div
-      id="hero-wrapper"
-      class="flex flex-col h-screen p-3 pb-0 font-poppins bg-parchment"
-    >
-      <div class="p-3 pb-0">
-        <nav class="h-8 w-full flex justify-between items-center text-fern-800">
-          <!-- TODO: add links to sections onclick of hamburger menu -->
-          <p class="text-lg">Ethan Cloin</p>
-          <img src="./assets/icons/menu-hamburger-svgrepo-com.svg" />
-        </nav>
-      </div>
 
-      <section
-        id="hero"
-        class="flex flex-col flex-grow-2 items-center text-center"
-      >
-        <div class="flex-col flex p-3">
-          <p class="text-lg text-slate-700">Who am I?</p>
-          <p class="text-black text-4xl font-domine">Ethan Cloin</p>
-        </div>
-        <div class="flex flex-col items-center justify-around">
-          <p class="text-lg text-slate-800">
-            I'm a problem solver, determined to find efficient solutions. I
-            develop web technology and write technical articles, often from the
-            comfort of a local coffee shop.
-          </p>
-          <p class="text-lg text-slate-800 mt-4">
-            Curious about what I can do? Check out my experience and writings
-            below!
-          </p>
-        </div>
-      </section>
-      <div class="flex flex-col items-center justify-around">
-        <a
-          href="#industries"
-          class="w-1/2 h-12 flex justify-center items-center my-10 bg-slate-200 text-xl text-slate-800 border rounded-sm border-slate-600"
-          >See my work!</a
-        >
-      </div>
-      <img
-        class="w-fit h-auto mt-auto grow-0"
-        src="assets/images/2023-profilephoto-removebg-preview.png"
-      />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/icons/owl-favicon.png" />
+  <title>Profile | Ethan Cloin</title>
+</head>
+
+<body>
+  <div class="flex flex-col h-screen p-3 pb-0 font-poppins bg-parchment">
+    <div class="p-3 pb-0">
+      <nav class="h-8 w-full flex justify-between items-center text-fern-800">
+        <p class="text-lg">Ethan Cloin</p>
+        <img src="./assets/icons/menu-hamburger-svgrepo-com.svg" />
+      </nav>
     </div>
 
-    <div class="flex w-screen p-3 justify-center items-center mt-12">
-      <p class="text-lg text-slate-600">My Experiences</p>
+    <section class="flex flex-col flex-grow-2 items-center text-center">
+      <div class="bg-red rounded-full overflow-hidden flex justify-center items-center">
+        <img class="w-[235px] h-[235px] object-cover" src="assets/images/2023-profilephoto.jpeg" />
+      </div>
+    </section>
+  </div>
+
+  <div class="flex w-screen p-3 justify-center items-center mt-12">
+    <p class="text-lg text-slate-600">My Experiences</p>
+  </div>
+  <section id="industries" class="flex flex-col h-fit px-5 py-3">
+    <div id="1-experience-card"
+      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
+      <div class="flex flex-col w-full">
+        <img src="assets/icons/payment-card-svgrepo-com.svg" width="36px" height="36px" />
+        <p class="text-xl pt-3">Payment Processing</p>
+        <p class="text-md pt-3">
+          Mobile and web development, supporting a mobile Point of Sale and
+          merchant portal.
+        </p>
+      </div>
     </div>
-    <section id="industries" class="flex flex-col h-fit px-5 py-3">
-      <div
-        id="1-experience-card"
-        class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3"
-      >
-        <div class="flex flex-col w-full">
-          <img
-            src="assets/icons/payment-card-svgrepo-com.svg"
-            width="36px"
-            height="36px"
-          />
-          <p class="text-xl pt-3">Payment Processing</p>
-          <p class="text-md pt-3">
-            Mobile and web development, supporting a mobile Point of Sale and
-            merchant portal.
-          </p>
-        </div>
+    <div id="2-experience-card"
+      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
+      <div class="flex flex-col w-full">
+        <img src="assets/icons/hamburger-svgrepo-com.svg" width="36px" height="36px" />
+        <p class="text-xl pt-3">Restaurant Technology</p>
+        <p class="text-md pt-3">
+          Supported software for online and mobile ordering, building
+          automations for internal tasks.
+        </p>
       </div>
-      <div
-        id="2-experience-card"
-        class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3"
-      >
-        <div class="flex flex-col w-full">
-          <img
-            src="assets/icons/hamburger-svgrepo-com.svg"
-            width="36px"
-            height="36px"
-          />
-          <p class="text-xl pt-3">Restaurant Technology</p>
-          <p class="text-md pt-3">
-            Supported software for online and mobile ordering, building
-            automations for internal tasks.
-          </p>
-        </div>
+    </div>
+    <div id="3-experience-card"
+      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
+      <div class="flex flex-col w-full">
+        <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
+        <p class="text-xl pt-3">Wealth Management</p>
+        <p class="text-md pt-3">
+          Fullstack web development wrangling high volumes of financial data.
+        </p>
       </div>
-      <div
-        id="3-experience-card"
-        class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3"
-      >
-        <div class="flex flex-col w-full">
-          <img
-            src="assets/icons/diamond-wealth-svgrepo-com.svg"
-            width="36px"
-            height="36px"
-          />
-          <p class="text-xl pt-3">Wealth Management</p>
-          <p class="text-md pt-3">
-            Fullstack web development wrangling high volumes of financial data.
-          </p>
-        </div>
+    </div>
+  </section>
+  <section id="skills-and-tech" class="flex flex-col h-fit px-5 py-3">
+    <div id="1-skill-card"
+      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
+      <div class="flex flex-col w-full">
+        <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
+        <p class="text-xl pt-3">Python</p>
+        <p class="text-md pt-3">
+          From scripting to feature-rich web servers, I leverage Python to
+          power many of my solutions.
+        </p>
       </div>
-    </section>
-    <section id="skills-and-tech" class="flex flex-col h-fit px-5 py-3">
-      <div
-        id="1-skill-card"
-        class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3"
-      >
-        <div class="flex flex-col w-full">
-          <img
-            src="assets/icons/diamond-wealth-svgrepo-com.svg"
-            width="36px"
-            height="36px"
-          />
-          <p class="text-xl pt-3">Python</p>
-          <p class="text-md pt-3">
-            From scripting to feature-rich web servers, I leverage Python to
-            power many of my solutions.
-          </p>
-        </div>
+    </div>
+    <div id="2-skill-card"
+      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
+      <div class="flex flex-col w-full">
+        <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
+        <p class="text-xl pt-3">C# and Java</p>
+        <p class="text-md pt-3">
+          Object-Oriented Programming is a staple, particularly in enterprise
+          environments. I have contributed to both Java and C# projects for
+          previous employers.
+        </p>
       </div>
-      <div
-        id="2-skill-card"
-        class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3"
-      >
-        <div class="flex flex-col w-full">
-          <img
-            src="assets/icons/diamond-wealth-svgrepo-com.svg"
-            width="36px"
-            height="36px"
-          />
-          <p class="text-xl pt-3">C# and Java</p>
-          <p class="text-md pt-3">
-            Object-Oriented Programming is a staple, particularly in enterprise
-            environments. I have contributed to both Java and C# projects for
-            previous employers.
-          </p>
-        </div>
+    </div>
+    <div id="3-skill-card"
+      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
+      <div class="flex flex-col w-full">
+        <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
+        <p class="text-xl pt-3">SQL</p>
+        <p class="text-md pt-3">
+          An application is nothing without the <strong>data</strong> that
+          supports it. Organizing and querying relational data falls neatly
+          within my skillset.
+        </p>
       </div>
-      <div
-        id="3-skill-card"
-        class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3"
-      >
-        <div class="flex flex-col w-full">
-          <img
-            src="assets/icons/diamond-wealth-svgrepo-com.svg"
-            width="36px"
-            height="36px"
-          />
-          <p class="text-xl pt-3">SQL</p>
-          <p class="text-md pt-3">
-            An application is nothing without the <strong>data</strong> that
-            supports it. Organizing and querying relational data falls neatly
-            within my skillset.
-          </p>
-        </div>
-      </div>
+    </div>
 
-      <div
-        id="4-skill-card"
-        class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3"
-      >
-        <div class="flex flex-col w-full">
-          <img
-            src="assets/icons/diamond-wealth-svgrepo-com.svg"
-            width="36px"
-            height="36px"
-          />
-          <p class="text-xl pt-3">JavaScript</p>
-          <p class="text-md pt-3">
-            JavaScript serves as the engine of many modern web applications. I
-            have experience using JavaScript (and TypeScript) in client
-            frameworks like React and Vue, and in a server runtime like Node.
-          </p>
-        </div>
+    <div id="4-skill-card"
+      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
+      <div class="flex flex-col w-full">
+        <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
+        <p class="text-xl pt-3">JavaScript</p>
+        <p class="text-md pt-3">
+          JavaScript serves as the engine of many modern web applications. I
+          have experience using JavaScript (and TypeScript) in client
+          frameworks like React and Vue, and in a server runtime like Node.
+        </p>
       </div>
-      <div
-        id="5-skill-card"
-        class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3"
-      >
-        <div class="flex flex-col w-full">
-          <img
-            src="assets/icons/diamond-wealth-svgrepo-com.svg"
-            width="36px"
-            height="36px"
-          />
-          <p class="text-xl pt-3">HTML + CSS</p>
-          <p class="text-md pt-3">
-            If JS is an engine, HTML is a frame and CSS a paintjob. I have
-            experience writing traditional HTML and CSS, as well as with
-            Tailwind CSS Framework and various HTML templating languages like
-            JSX and Jinja.
-          </p>
-        </div>
+    </div>
+    <div id="5-skill-card"
+      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
+      <div class="flex flex-col w-full">
+        <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
+        <p class="text-xl pt-3">HTML + CSS</p>
+        <p class="text-md pt-3">
+          If JS is an engine, HTML is a frame and CSS a paintjob. I have
+          experience writing traditional HTML and CSS, as well as with
+          Tailwind CSS Framework and various HTML templating languages like
+          JSX and Jinja.
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Sidebar / Bottombar -->
-    <!-- <div class="outer-wrapper"> -->
-    <!-- <div class="iconbar">
+  <!-- Sidebar / Bottombar -->
+  <!-- <div class="outer-wrapper"> -->
+  <!-- <div class="iconbar">
         <section class="contact-wrapper">
           <a
             class="contact-link"
@@ -238,7 +161,8 @@
         </section>
       </div> -->
 
-    <!-- <div class="content-wrapper"> -->
-    <!-- About Me -->
-  </body>
+  <!-- <div class="content-wrapper"> -->
+  <!-- About Me -->
+</body>
+
 </html>
