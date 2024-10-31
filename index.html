@@ -15,31 +15,43 @@
   <title>Profile | Ethan Cloin</title>
 </head>
 
-<body>
-  <div class="flex flex-col h-screen p-3 pb-0 font-poppins bg-parchment">
-    <div class="p-3 pb-0">
-      <nav class="h-8 w-full flex justify-between items-center text-fern-800">
+<body class="font-poppins bg-parchment">
+  <div class="flex h-screen flex-col pb-0 ">
+    <div class="fixed flex w-screen bg-parchment p-3 pb-1">
+      <nav class="flex h-8 w-full items-center justify-between p-3 pb-0 text-fern-800 ">
         <p class="text-lg">Ethan Cloin</p>
-        <img src="./assets/icons/menu-hamburger-svgrepo-com.svg" />
+        <div class="flex w-3/5 justify-around text-sm">
+          <p>Experience</p>
+          <p>About</p>
+          <p>Contact</p>
+        </div>
       </nav>
     </div>
 
-    <section class="flex flex-col flex-grow-2 items-center text-center">
-      <div class="bg-red rounded-full overflow-hidden flex justify-center items-center">
-        <img class="w-[235px] h-[235px] object-cover" src="assets/images/2023-profilephoto.jpeg" />
+    <section class="flex-grow-2 mt-24 flex flex-col items-center text-center">
+      <div class="bg-red flex items-center justify-center overflow-hidden rounded-full">
+        <img class="h-[235px] w-[235px] object-cover" src="assets/images/2023-profilephoto.jpeg" />
       </div>
+      <p class="mt-6 p-3 text-[2.75rem] leading-snug text-fern-800">Problem Solver & <span
+          class="text-sienna-800">Unambiguous</span>
+        Communicator
+      </p>
     </section>
+    <div class="mt-16 h-fit w-screen bg-parchment-dark p-1 text-center">
+      <p class="text-sm font-extrabold text-fern-700">BUILDING WEB APPLICATIONS IN
+        JACKSONVILLE, FL</p>
+    </div>
   </div>
 
-  <div class="flex w-screen p-3 justify-center items-center mt-12">
+  <div class="mt-12 flex w-screen items-center justify-center p-3">
     <p class="text-lg text-slate-600">My Experiences</p>
   </div>
-  <section id="industries" class="flex flex-col h-fit px-5 py-3">
+  <section id="industries" class="flex h-fit flex-col px-5 py-3">
     <div id="1-experience-card"
-      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
-      <div class="flex flex-col w-full">
+      class="my-3 flex h-48 w-full rounded-md border border-slate-200 bg-slate-50 p-4 drop-shadow-md">
+      <div class="flex w-full flex-col">
         <img src="assets/icons/payment-card-svgrepo-com.svg" width="36px" height="36px" />
-        <p class="text-xl pt-3">Payment Processing</p>
+        <p class="pt-3 text-xl">Payment Processing</p>
         <p class="text-md pt-3">
           Mobile and web development, supporting a mobile Point of Sale and
           merchant portal.
@@ -47,10 +59,10 @@
       </div>
     </div>
     <div id="2-experience-card"
-      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
-      <div class="flex flex-col w-full">
+      class="my-3 flex h-48 w-full rounded-md border border-slate-200 bg-slate-50 p-4 drop-shadow-md">
+      <div class="flex w-full flex-col">
         <img src="assets/icons/hamburger-svgrepo-com.svg" width="36px" height="36px" />
-        <p class="text-xl pt-3">Restaurant Technology</p>
+        <p class="pt-3 text-xl">Restaurant Technology</p>
         <p class="text-md pt-3">
           Supported software for online and mobile ordering, building
           automations for internal tasks.
@@ -58,22 +70,22 @@
       </div>
     </div>
     <div id="3-experience-card"
-      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
-      <div class="flex flex-col w-full">
+      class="my-3 flex h-48 w-full rounded-md border border-slate-200 bg-slate-50 p-4 drop-shadow-md">
+      <div class="flex w-full flex-col">
         <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
-        <p class="text-xl pt-3">Wealth Management</p>
+        <p class="pt-3 text-xl">Wealth Management</p>
         <p class="text-md pt-3">
           Fullstack web development wrangling high volumes of financial data.
         </p>
       </div>
     </div>
   </section>
-  <section id="skills-and-tech" class="flex flex-col h-fit px-5 py-3">
+  <section id="skills-and-tech" class="flex h-fit flex-col px-5 py-3">
     <div id="1-skill-card"
-      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
-      <div class="flex flex-col w-full">
+      class="my-3 flex h-48 w-full rounded-md border border-slate-200 bg-slate-50 p-4 drop-shadow-md">
+      <div class="flex w-full flex-col">
         <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
-        <p class="text-xl pt-3">Python</p>
+        <p class="pt-3 text-xl">Python</p>
         <p class="text-md pt-3">
           From scripting to feature-rich web servers, I leverage Python to
           power many of my solutions.
@@ -81,10 +93,10 @@
       </div>
     </div>
     <div id="2-skill-card"
-      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
-      <div class="flex flex-col w-full">
+      class="my-3 flex h-48 w-full rounded-md border border-slate-200 bg-slate-50 p-4 drop-shadow-md">
+      <div class="flex w-full flex-col">
         <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
-        <p class="text-xl pt-3">C# and Java</p>
+        <p class="pt-3 text-xl">C# and Java</p>
         <p class="text-md pt-3">
           Object-Oriented Programming is a staple, particularly in enterprise
           environments. I have contributed to both Java and C# projects for
@@ -93,10 +105,10 @@
       </div>
     </div>
     <div id="3-skill-card"
-      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
-      <div class="flex flex-col w-full">
+      class="my-3 flex h-48 w-full rounded-md border border-slate-200 bg-slate-50 p-4 drop-shadow-md">
+      <div class="flex w-full flex-col">
         <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
-        <p class="text-xl pt-3">SQL</p>
+        <p class="pt-3 text-xl">SQL</p>
         <p class="text-md pt-3">
           An application is nothing without the <strong>data</strong> that
           supports it. Organizing and querying relational data falls neatly
@@ -106,10 +118,10 @@
     </div>
 
     <div id="4-skill-card"
-      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
-      <div class="flex flex-col w-full">
+      class="my-3 flex h-48 w-full rounded-md border border-slate-200 bg-slate-50 p-4 drop-shadow-md">
+      <div class="flex w-full flex-col">
         <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
-        <p class="text-xl pt-3">JavaScript</p>
+        <p class="pt-3 text-xl">JavaScript</p>
         <p class="text-md pt-3">
           JavaScript serves as the engine of many modern web applications. I
           have experience using JavaScript (and TypeScript) in client
@@ -118,10 +130,10 @@
       </div>
     </div>
     <div id="5-skill-card"
-      class="h-48 w-full bg-slate-50 border border-slate-200 rounded-md flex p-4 drop-shadow-md my-3">
-      <div class="flex flex-col w-full">
+      class="my-3 flex h-48 w-full rounded-md border border-slate-200 bg-slate-50 p-4 drop-shadow-md">
+      <div class="flex w-full flex-col">
         <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
-        <p class="text-xl pt-3">HTML + CSS</p>
+        <p class="pt-3 text-xl">HTML + CSS</p>
         <p class="text-md pt-3">
           If JS is an engine, HTML is a frame and CSS a paintjob. I have
           experience writing traditional HTML and CSS, as well as with
