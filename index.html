@@ -65,7 +65,7 @@
     </section>
     <section class="mt-8">
       <h2 class="text-xl font-semibold">My Drive</h2>
-      <div class="text-[16px]">
+      <div claTass="text-[16px]">
         <p class="mb-4">Beyond the responsibilities of my employment, I am <span class="text-sienna-800">building
           </span><em>relentlessly</em>.<br /></p>
         <p class="mb-4">I take on personal projects to challenge myself with new technologies.<br /></p>
@@ -80,10 +80,11 @@
   <section class="text-fern-800 mx-4 md:container md:mx-auto md:w-2/3 md:px-16">
     <h1 class="w-full text-center text-3xl mt-8 mb-12">My Experience</h1>
     <div id="tabbed-view" class="w-full h-[500px]">
-      <div id="tab-list" class="flex justify-evenly bg-sage-600 p-2 text-parchment-light">
-        <span>Black Diamond</span>
-        <span>Pax Technology</span>
-        <span>Freelance</span>
+      <div id="tab-list" class="flex items-center justify-evenly px-2 uppercase text-fern-800">
+        <span class="border-sienna-700 border-b-2 text-sienna-600 cursor-pointer" onclick="displayTab(this)">Black
+          Diamond</span>
+        <span class="border-b-2 border-fern-800 cursor-pointer" onclick="displayTab(this)">Pax Technology</span>
+        <span class="border-b-2 border-fern-800 cursor-pointer" onclick="displayTab(this)">Contract Work</span>
       </div>
       <div id="tab-content">
         <div id="job-description">I worked at BlackDiamond as an Associate Software Engineer</div>
@@ -91,6 +92,19 @@
       </div>
     </div>
   </section>
+  <script>
+    const selectedCss = "border-sienna-700 border-b-2 text-sienna-600 cursor-pointer";
+    const unselectedCss = "border-b-2 border-fern-800 cursor-pointer";
+
+    function displayTab(selectedTab) {
+      const tabs = document.querySelectorAll("#tab-list span")
+      tabs.forEach(t => t.classList = unselectedCss);
+      selectedTab.className = selectedCss;
+    }
+    // the goal of this script is to support clicking between tabs in the experience section,
+    // displaying the latest clicked tab content and updating styling on the tab name. 
+
+  </script>
   <!--
   <div class="mt-12 flex w-screen items-center justify-center p-3">
     <p class="text-lg text-slate-600">My Experiences</p>
