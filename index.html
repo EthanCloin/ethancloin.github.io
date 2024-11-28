@@ -81,16 +81,54 @@
     <h1 class="w-full text-center text-3xl mt-8 mb-12">My Experience</h1>
     <div id="tabbed-view" class="w-full h-[500px]">
       <div id="tab-list" class="flex items-center justify-evenly px-2 uppercase text-fern-800">
-        <span class="border-sienna-700 border-b-2 text-sienna-600 cursor-pointer" onclick="displayTab(this)">Black
+        <span id="black-diamond" class="border-sienna-700 border-b-2 text-sienna-600 cursor-pointer"
+          onclick="displayTab(this)">Black
           Diamond</span>
-        <span class="border-b-2 border-fern-800 cursor-pointer" onclick="displayTab(this)">Pax Technology</span>
-        <span class="border-b-2 border-fern-800 cursor-pointer" onclick="displayTab(this)">Contract Work</span>
+        <span id="pax" class="border-b-2 border-fern-800 cursor-pointer" onclick="displayTab(this)">Pax
+          Technology</span>
+        <span id="hazlnut" class="border-b-2 border-fern-800 cursor-pointer" onclick="displayTab(this)">Hazlnut,
+          LLC</span>
       </div>
-      <div id="tab-content">
+      <div
+        class="black-diamond my-3 flex h-48 w-full rounded-md border border-fern-800 bg-parchment-light p-4 drop-shadow-md"
+        data-exp-card>
+        <div class="flex w-full flex-col">
+          <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
+          <p class="pt-3 text-xl">Wealth Management</p>
+          <p class="text-md pt-3">
+            Fullstack web development wrangling high volumes of financial data.
+          </p>
+        </div>
+      </div>
+      <div
+        class="pax my-3 flex h-48 w-full rounded-md border border-fern-800 bg-parchment-light p-4 drop-shadow-md hidden"
+        data-exp-card>
+        <div class="flex w-full flex-col">
+          <img src="assets/icons/payment-card-svgrepo-com.svg" width="36px" height="36px" />
+          <p class="pt-3 text-xl">Payment Processing</p>
+          <p class="text-md pt-3">
+            Mobile and web development, supporting a mobile Point of Sale and
+            merchant portal.
+          </p>
+        </div>
+      </div>
+      <div
+        class="hazlnut my-3 flex h-48 w-full rounded-md border border-fern-800 bg-parchment-light p-4 drop-shadow-md hidden"
+        data-exp-card>
+        <div class="flex w-full flex-col">
+          <img src="assets/icons/hamburger-svgrepo-com.svg" width="36px" height="36px" />
+          <p class="pt-3 text-xl">Restaurant Technology</p>
+          <p class="text-md pt-3">
+            Supported software for online and mobile ordering, building
+            automations for internal tasks.
+          </p>
+        </div>
+      </div>
+      <!--  <div id="tab-content">
         <div id="job-description">I worked at BlackDiamond as an Associate Software Engineer</div>
         <div id="wrapper"><img src="" alt=""></div>
       </div>
-    </div>
+</div> -->
   </section>
   <script>
     const selectedCss = "border-sienna-700 border-b-2 text-sienna-600 cursor-pointer";
@@ -100,10 +138,15 @@
       const tabs = document.querySelectorAll("#tab-list span")
       tabs.forEach(t => t.classList = unselectedCss);
       selectedTab.className = selectedCss;
+      // TODO: Update this to also change the value of #tab-content element
+      const experienceCards = document.querySelectorAll("[data-exp-card]");
+      experienceCards.forEach(c => {
+        c.classList.add("hidden");
+        if (c.classList.contains(selectedTab.id)) {
+          c.classList.remove("hidden");
+        }
+      });
     }
-    // the goal of this script is to support clicking between tabs in the experience section,
-    // displaying the latest clicked tab content and updating styling on the tab name. 
-
   </script>
   <!--
   <div class="mt-12 flex w-screen items-center justify-center p-3">
