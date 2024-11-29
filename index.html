@@ -18,8 +18,8 @@
 <body class="bg-parchment-light">
   <div class="flex h-screen flex-col pb-0 md:container md:mx-auto md:w-2/3 ">
     <div
-      class="fixed flex w-full border-b-2 border-sienna-700 bg-parchment-light p-2 pt-3 md:left-1/3 md:w-2/3 md:-translate-x-1/4 md:transform">
-      <nav class="flex h-8 w-full items-center justify-between p-3 pb-0 text-fern-800 ">
+      class="fixed flex w-full border-b-2 border-sienna-700 bg-parchment-light p-2 pt-5 md:left-1/3 md:w-2/3 md:-translate-x-1/4 md:transform">
+      <nav class="flex h-8 w-full items-center justify-between p-3 pb-0 text-fern-700 ">
         <p class="text-lg font-semibold md:text-xl">Ethan Cloin</p>
         <div class="flex w-3/5 justify-around text-sm md:text-lg">
           <p>Experience</p>
@@ -30,7 +30,7 @@
     </div>
 
     <section class="flex-grow-2 mt-24 flex flex-col items-center text-center">
-      <div class="bg-red flex items-center justify-center overflow-hidden rounded-full">
+      <div class="bg-red flex items-center justify-center overflow-hidden rounded-full border-4 border-fern-800/70">
         <img class="h-[235px] w-[235px] object-cover" src="assets/images/2023-profilephoto.jpeg" />
       </div>
       <p class="mt-6 p-3 text-[2.75rem] leading-snug text-fern-800">Problem Solver & <span
@@ -38,16 +38,16 @@
         Communicator
       </p>
     </section>
-    <div class="mt-20 h-fit w-full bg-parchment p-1 text-center md:mt-24 md:py-2">
+    <div class="mt-20 h-fit w-full border-y border-cocoa-800 bg-parchment p-1 text-center md:mt-24 md:py-2">
       <p class="text-sm font-extrabold text-fern-700 md:text-lg">BUILDING WEB APPLICATIONS IN
         JACKSONVILLE, FL</p>
     </div>
   </div>
 
   <section class="pl-6 pr-4 text-fern-800 md:container md:mx-auto md:w-2/3 md:px-16">
-    <h1 class="w-full text-center text-3xl">A Bit About Me</h1>
+    <h1 class="w-full text-center text-3xl text-cocoa-600/90">A Bit About Me</h1>
     <section class="mt-8">
-      <h2 class="text-xl font-semibold">My Approach</h2>
+      <h2 class="mb-2 w-fit border-b border-b-cocoa-700 text-xl font-semibold">My Approach</h2>
       <div class="text-[16px]">
         <p class="mb-4">I want to understand <em>how things work</em>.<br /></p>
         <p class="mb-4">Specifically, I want to understand your <strong>mission</strong>, your <strong>process</strong>,
@@ -56,7 +56,7 @@
       </div>
     </section>
     <section class="mt-8">
-      <h2 class="text-xl font-semibold">My Work</h2>
+      <h2 class="mb-2 w-fit border-b border-b-cocoa-700 text-xl font-semibold">My Work</h2>
       <div class="text-[16px]">
         <p class="mb-4">I am a fullstack web developer, contributing the the Black Diamond Wealth Platform.<br /></p>
         <p class="mb-4">In this capacity, I write programs which interact with our databases, message queues, ETL
@@ -64,7 +64,7 @@
       </div>
     </section>
     <section class="mt-8">
-      <h2 class="text-xl font-semibold">My Drive</h2>
+      <h2 class="mb-2 w-fit border-b border-b-cocoa-700 text-xl font-semibold">My Drive</h2>
       <div claTass="text-[16px]">
         <p class="mb-4">Beyond the responsibilities of my employment, I am <span class="text-sienna-800">building
           </span><em>relentlessly</em>.<br /></p>
@@ -77,31 +77,33 @@
     </section>
   </section>
 
-  <section class="text-fern-800 mx-4 md:container md:mx-auto md:w-2/3 md:px-16">
-    <h1 class="w-full text-center text-3xl mt-8 mb-12">My Experience</h1>
-    <div id="tabbed-view" class="w-full h-[500px]">
+  <section class="mx-4 text-fern-800 md:container md:mx-auto md:w-2/3 md:px-16">
+    <h1 class="mb-12 mt-8 w-full text-center text-3xl text-cocoa-600/90 text-sage-700">My Experience</h1>
+    <div id="tabbed-view" class="h-[500px] w-full">
       <div id="tab-list" class="flex items-center justify-evenly px-2 uppercase text-fern-800">
-        <span id="black-diamond" class="border-sienna-700 border-b-2 text-sienna-600 cursor-pointer"
+        <span id="black-diamond" class="cursor-pointer border-b-2 border-sienna-700 text-sienna-600"
           onclick="displayTab(this)">Black
           Diamond</span>
-        <span id="pax" class="border-b-2 border-fern-800 cursor-pointer" onclick="displayTab(this)">Pax
+        <span id="pax" class="cursor-pointer border-b-2 border-fern-800" onclick="displayTab(this)">Pax
           Technology</span>
-        <span id="hazlnut" class="border-b-2 border-fern-800 cursor-pointer" onclick="displayTab(this)">Hazlnut,
+        <span id="hazlnut" class="cursor-pointer border-b-2 border-fern-800" onclick="displayTab(this)">Hazlnut,
           LLC</span>
       </div>
       <div
         class="black-diamond my-3 flex h-48 w-full rounded-md border border-fern-800 bg-parchment-light p-4 drop-shadow-md"
         data-exp-card>
         <div class="flex w-full flex-col">
-          <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
-          <p class="pt-3 text-xl">Wealth Management</p>
+          <div class="flex justify-between">
+            <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
+            <p class="pt-3 text-xl text-sage-800">Associate Software Engineer</p>
+          </div>
           <p class="text-md pt-3">
             Fullstack web development wrangling high volumes of financial data.
           </p>
         </div>
       </div>
       <div
-        class="pax my-3 flex h-48 w-full rounded-md border border-fern-800 bg-parchment-light p-4 drop-shadow-md hidden"
+        class="pax my-3 flex hidden h-48 w-full rounded-md border border-fern-800 bg-parchment-light p-4 drop-shadow-md"
         data-exp-card>
         <div class="flex w-full flex-col">
           <img src="assets/icons/payment-card-svgrepo-com.svg" width="36px" height="36px" />
@@ -113,7 +115,7 @@
         </div>
       </div>
       <div
-        class="hazlnut my-3 flex h-48 w-full rounded-md border border-fern-800 bg-parchment-light p-4 drop-shadow-md hidden"
+        class="hazlnut my-3 flex hidden h-48 w-full rounded-md border border-fern-800 bg-parchment-light p-4 drop-shadow-md"
         data-exp-card>
         <div class="flex w-full flex-col">
           <img src="assets/icons/hamburger-svgrepo-com.svg" width="36px" height="36px" />
@@ -124,15 +126,10 @@
           </p>
         </div>
       </div>
-      <!--  <div id="tab-content">
-        <div id="job-description">I worked at BlackDiamond as an Associate Software Engineer</div>
-        <div id="wrapper"><img src="" alt=""></div>
-      </div>
-</div> -->
   </section>
   <script>
-    const selectedCss = "border-sienna-700 border-b-2 text-sienna-600 cursor-pointer";
-    const unselectedCss = "border-b-2 border-fern-800 cursor-pointer";
+    const selectedCss = "cursor-pointer border-b-2 border-cocoa-700 text-cocoa-600";
+    const unselectedCss = "cursor-pointer border-b-2 border-fern-800";
 
     function displayTab(selectedTab) {
       const tabs = document.querySelectorAll("#tab-list span")
