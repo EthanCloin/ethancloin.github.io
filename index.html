@@ -1,99 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/icons/owl-favicon.png">
-    <title>Profile | Ethan Cloin</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <!-- links to sections -->
-      <!-- <a class="navbar-link" href="#About Me">About Me</a>
-      <a class="navbar-link" href="#Experience">Experience</a>
-      <a class="navbar-link" href="#Contact">Contact</a> -->
-      <!-- link to resume -->
-      <a
-        class="navbar-link"
-        href="assets/documents/202301-Resume-Default.pdf"
-        download="EthanCloin-Resume"
-        >Resume<img class="navbar-icon" src="assets/icons/download.svg"
-      /></a>
-    </nav>
+<html lang="en" class="font-mulish">
 
-    <!-- Sidebar / Bottombar -->
-    <div class="outer-wrapper">
-      <div class="iconbar">
-        <section class="contact-wrapper">
-          <a
-            class="contact-link"
-            href="https://linkedin.com/in/ethancloin"
-            target="_blank"
-          >
-            <img class="contact-icon" src="assets/icons/linkedin.svg" />
-          </a>
-          <div class="decorative-line"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/icons/owl-favicon.png" />
+  <title>Profile | Ethan Cloin</title>
+</head>
 
-          <!-- <a
-            class="contact-link"
-            href="mailto:dev.ethancloin@gmail.com"
-            target="_blank"
-          >
-            <img class="contact-icon" src="assets/icons/email.svg" />
-          </a>
-          <div class="decorative-line"></div> -->
-          <a
-            class="contact-link"
-            href="https://www.github.com/ethancloin"
-            target="_blank"
-          >
-            <img class="contact-icon" src="assets/icons/github.svg" />
-          </a>
-          <div class="decorative-line"></div>
-          <a
-            class="contact-link"
-            href="https://medium.com/@EthanCloin"
-            target="_blank"
-          >
-            <img class="contact-icon" src="assets/icons/medium.svg" />
-          </a>
-        </section>
-      </div>
-
-      <div class="content-wrapper">
-        <!-- About Me -->
-        <div class="bio">
-          <h3 class="bio-intro">Hi! My name is</h3>
-          <h1 class="bio-title">Ethan Cloin.</h1>
-          <p class="bio-subtitle">I bring solutions for your tech problems.</p>
-          <p class="bio-body">
-            I am a software engineer with a fullstack skillset, specialized in
-            web development. Currently focused on contributing to the Black
-            Diamond Wealth Management Platform, primarily leveraging tools
-            within the .NET and React ecosystems.
-          </p>
-          <h1></h1>
+<body class="bg-parchment-light">
+  <div class="flex h-screen flex-col pb-0 md:container md:mx-auto md:w-2/3 ">
+    <div
+      class="fixed flex w-full border-b-2 border-sienna-700 bg-parchment-light p-2 pt-5 md:left-1/3 md:w-2/3 md:-translate-x-1/4 md:transform">
+      <nav class="flex h-8 w-full items-center justify-between p-3 pb-0 text-fern-700 ">
+        <p class="text-lg font-semibold md:text-xl">Ethan Cloin</p>
+        <div class="flex w-3/5 justify-around text-sm md:text-lg">
+          <p>Experience</p>
+          <p>About</p>
+          <p>Contact</p>
         </div>
-
-        <!-- <div class="announcement">
-          <h1>This site is under active development!</h1>
-          <p>
-            Check my work by visiting
-            <a
-              class="announcement-link"
-              href="https://github.com/EthanCloin/ethancloin.github.io"
-              target="_blank"
-              >my GitHub repository for this page!</a
-            >
-            <br />
-            <br />For now, you can check out the links to my various social
-            profiles, download a copy of my resume, or contact me by email.
-          </p> -->
-        </div>
-      </div>
+      </nav>
     </div>
-  </body>
+
+    <section class="flex-grow-2 mt-24 flex flex-col items-center text-center">
+      <div class="bg-red flex items-center justify-center overflow-hidden rounded-full border-4 border-fern-800/70">
+        <img class="h-[235px] w-[235px] object-cover" src="assets/images/2023-profilephoto.jpeg" />
+      </div>
+      <p class="mt-6 p-3 text-[2.75rem] leading-snug text-fern-800">Problem Solver & <span
+          class="text-sienna-800">Unambiguous</span>
+        Communicator
+      </p>
+    </section>
+    <div class="mt-20 h-fit w-full border-y border-cocoa-800 bg-parchment p-1 text-center md:mt-24 md:py-2">
+      <p class="text-sm font-extrabold text-fern-700 md:text-lg">BUILDING WEB APPLICATIONS IN
+        JACKSONVILLE, FL</p>
+    </div>
+  </div>
+
+  <section class="pl-6 pr-4 text-fern-800 md:container md:mx-auto md:w-2/3 md:px-16">
+    <h1 class="w-full text-center text-3xl text-cocoa-600/90">A Bit About Me</h1>
+    <section class="mt-8">
+      <h2 class="mb-2 w-fit border-b border-b-cocoa-700 text-xl font-semibold">My Approach</h2>
+      <div class="text-[16px]">
+        <p class="mb-4">I want to understand <em>how things work</em>.<br /></p>
+        <p class="mb-4">Specifically, I want to understand your <strong>mission</strong>, your <strong>process</strong>,
+          and your <span class="text-sienna-800"><strong>technology</strong></span>.<br /></p>
+        <p>My skill set <em>(and mindset)</em> could be precisely the tools you need to solve your problem.</p>
+      </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="mb-2 w-fit border-b border-b-cocoa-700 text-xl font-semibold">My Work</h2>
+      <div class="text-[16px]">
+        <p class="mb-4">I am a fullstack web developer, contributing the the Black Diamond Wealth Platform.<br /></p>
+        <p class="mb-4">In this capacity, I write programs which interact with our databases, message queues, ETL
+          pipelines, and <em>(of course)</em> the client web browser.<br></p>
+      </div>
+    </section>
+    <section class="mt-8">
+      <h2 class="mb-2 w-fit border-b border-b-cocoa-700 text-xl font-semibold">My Drive</h2>
+      <div claTass="text-[16px]">
+        <p class="mb-4">Beyond the responsibilities of my employment, I am <span class="text-sienna-800">building
+          </span><em>relentlessly</em>.<br /></p>
+        <p class="mb-4">I take on personal projects to challenge myself with new technologies.<br /></p>
+        <p class="mb-4">I seek out other engineers and designers to <em>collaborate</em> and build my network.<br /></p>
+        <p class="mb-4">I dedicate time to reading books, papers, and articles, <span
+            class="text-sienna-800">perpetually building</span> a firmer
+          understanding of software architecture, system design, and web design.<br /></p>
+      </div>
+    </section>
+  </section>
+
+  <section class="mx-4 text-fern-800 md:container md:mx-auto md:w-2/3 md:px-16">
+    <h1 class="mb-12 mt-8 w-full text-center text-3xl text-cocoa-600/90 text-sage-700">My Experience</h1>
+    <div id="tabbed-view" class="h-[500px] w-full">
+      <div id="tab-list" class="flex items-center justify-evenly px-2 uppercase text-fern-800">
+        <span id="black-diamond" class="cursor-pointer border-b-2 border-sienna-700 text-sienna-600"
+          onclick="displayTab(this)">Black
+          Diamond</span>
+        <span id="pax" class="cursor-pointer border-b-2 border-fern-800" onclick="displayTab(this)">Pax
+          Technology</span>
+        <span id="hazlnut" class="cursor-pointer border-b-2 border-fern-800" onclick="displayTab(this)">Hazlnut,
+          LLC</span>
+      </div>
+      <div
+        class="black-diamond my-3 flex h-48 w-full rounded-md border border-fern-800 bg-parchment-light p-4 drop-shadow-md"
+        data-exp-card>
+        <div class="flex w-full flex-col">
+          <img src="assets/icons/diamond-wealth-svgrepo-com.svg" width="36px" height="36px" />
+          <p class="pt-3 text-xl text-sage-800">Software Engineer</p>
+          <p class="text-md pt-3">
+            Fullstack web development wrangling high volumes of financial data.
+          </p>
+        </div>
+      </div>
+      <div
+        class="pax my-3 flex hidden h-48 w-full rounded-md border border-fern-800 bg-parchment-light p-4 drop-shadow-md"
+        data-exp-card>
+        <div class="flex w-full flex-col">
+          <img src="assets/icons/payment-card-svgrepo-com.svg" width="36px" height="36px" />
+          <p class="pt-3 text-xl text-sage-800">Payment Processing</p>
+          <p class="text-md pt-3">
+            Mobile and web development, supporting a mobile Point of Sale and
+            merchant portal.
+          </p>
+        </div>
+      </div>
+      <div
+        class="hazlnut my-3 flex hidden h-48 w-full rounded-md border border-fern-800 bg-parchment-light p-4 drop-shadow-md"
+        data-exp-card>
+        <div class="flex w-full flex-col">
+          <img src="assets/icons/hamburger-svgrepo-com.svg" width="36px" height="36px" />
+          <p class="pt-3 text-xl text-sage-800">Restaurant Technology</p>
+          <p class="text-md pt-3">
+            Supported software for online and mobile ordering, building
+            automations for internal tasks.
+          </p>
+        </div>
+      </div>
+  </section>
+  <script>
+    const selectedCss = "cursor-pointer border-b-2 border-cocoa-700 text-cocoa-600";
+    const unselectedCss = "cursor-pointer border-b-2 border-fern-800";
+
+    function displayTab(selectedTab) {
+      const tabs = document.querySelectorAll("#tab-list span")
+      tabs.forEach(t => t.classList = unselectedCss);
+      selectedTab.className = selectedCss;
+      // TODO: Update this to also change the value of #tab-content element
+      const experienceCards = document.querySelectorAll("[data-exp-card]");
+      experienceCards.forEach(c => {
+        c.classList.add("hidden");
+        if (c.classList.contains(selectedTab.id)) {
+          c.classList.remove("hidden");
+        }
+      });
+    }
+  </script>
+</body>
+
 </html>
